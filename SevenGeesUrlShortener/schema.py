@@ -19,6 +19,7 @@ class CreateShortenedUrl(Mutation):
     @staticmethod
     def mutate(root, info, original_url):
         shortened = generate_shorted_url(original_url)
+        shortened.shortened_url = f"http://127.0.0.1:8000/{shortened.shortened_url }"
         return CreateShortenedUrl(url=shortened)
 
 class UrlMutation(ObjectType):
