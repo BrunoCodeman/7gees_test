@@ -2,7 +2,7 @@ aniso8601==6.0.0
 astroid==2.2.5
 certifi==2019.6.16
 chardet==3.0.4
-Django==2.2.13
+Django==2.2.27
 graphene==2.1.7
 graphene-django==2.5.0
 graphql-core==2.2.1
